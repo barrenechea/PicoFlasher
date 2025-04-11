@@ -37,6 +37,7 @@ pico_generate_pio_header(${PROJECT_NAME} ${CMAKE_CURRENT_LIST_DIR}/sdio.pio)
 # Link to pico_stdlib (gpio, time, etc. functions)
 target_link_libraries(${PROJECT_NAME} 
     pico_stdlib
+	tinyusb_board
 	tinyusb_device_unmarked
 	hardware_pio
 	hardware_spi
