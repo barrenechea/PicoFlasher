@@ -1,6 +1,9 @@
 # Set minimum required version of CMake
 cmake_minimum_required(VERSION 3.12)
 
+# Use the fastest supported clock speed, requires pico-sdk >= 2.1.1
+set(PICO_USE_FASTEST_SUPPORTED_CLOCK 1)
+
 # Include build functions from Pico SDK
 include($ENV{PICO_SDK_PATH}/external/pico_sdk_import.cmake)
 
